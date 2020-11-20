@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Add Test Note Data"
+        android:id="@+id/add_test_note_data"
+        app:showAsAction="never"/>
+    <item
+        android:title="Add Note"
+        android:id="@+id/add_assessment_note"
+        app:showAsAction="never"/>
+    <item
+        android:title="Delete Assessment"
+        android:id="@+id/delete_assessment"
+        app:showAsAction="never"/>
+    <item android:id="@+id/edit_assessment"
+        android:title="Edit Assessment"
+        app:showAsAction="never"/>
+    <item
+        android:title="Back to Assessments"
+        android:id="@+id/back_assessments"
+        app:showAsAction="never"/>
+    <item
+        android:title="Set alarm for goal date"
+        android:id="@+id/goal_alarm"
+        app:showAsAction="never"/>
+
+
+
+</menu>

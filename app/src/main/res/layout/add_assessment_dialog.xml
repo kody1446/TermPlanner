@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/assessment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assessment Title"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/assessment_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessment_title"
+        android:hint="Assessment Description"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/assessment_due"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessment_description"
+        android:inputType="date"
+        android:maxLength="10"
+        android:hint="End Date (YYYY-MM-DD)"
+        android:textSize="10dp" />
+
+    <Spinner
+        android:id="@+id/assessment_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessment_due"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:entries="@array/assessmentType" />
+    <Spinner
+        android:id="@+id/assessment_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessment_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:entries="@array/assessmentState"/>
+
+
+</RelativeLayout>

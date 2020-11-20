@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="319dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-6dp"
+        android:hint="Term Name"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/edittext_start"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:maxLength="10"
+        android:hint="Start Date (YYYY-MM-DD)"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/edittext_end"
+        android:layout_width="272dp"
+         android:inputType="date"
+        android:maxLength="10"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="58dp"
+        android:hint="End Date (YYYY-MM-DD)"
+        android:textSize="10dp" />
+
+
+</RelativeLayout>

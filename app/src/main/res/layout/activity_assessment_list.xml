@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssessmentListActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ListView
+        android:id="@+id/assessment_lv"
+        android:layout_width="match_parent"
+        android:layout_height="343dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp" />
+
+    <Button
+        android:id="@+id/add_assessment"
+        android:layout_width="139dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/assessment_lv"
+        android:text="Add Assessment"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background" />
+
+</RelativeLayout>
+</ScrollView>

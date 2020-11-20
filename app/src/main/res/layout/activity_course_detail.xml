@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseDetailActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/courseNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/startEndTxt"
+        android:text="Course name"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc_header"
+        android:layout_below="@+id/courseNameTxt"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Course Description:"/>
+
+    <TextView
+        android:id="@+id/courseDescriptionTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc_header"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="7dp"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:text="Course description" />
+
+
+    <Spinner
+        android:id="@+id/courseActiveSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseDescriptionTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="14dp"
+        android:entries="@array/courseActive"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/startEndTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="0dp"
+        android:textAlignment="center"
+        android:text="start date - End Date" />
+
+
+    <TextView
+        android:id="@+id/mentorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseActiveSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:text="Mentor name" />
+
+    <TextView
+        android:id="@+id/mentorEmailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mentorTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="22dp"
+        android:text="Mentor Email" />
+
+    <TextView
+        android:id="@+id/mentorPhoneTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mentorEmailTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="16dp"
+        android:text="Mentor Phone" />
+
+    <ListView
+
+        android:id="@+id/courseNoteLV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/mentorPhoneTxt"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:accessibilityPaneTitle="Notes"
+        android:scrollbars="vertical"
+        android:tooltipText="Notes" />
+
+    <Button
+        android:id="@+id/assesmentBtn"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseNoteLV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="209dp"
+        android:background="@drawable/button_background"
+        android:text="Assessments" />
+
+</RelativeLayout>
+</ScrollView>

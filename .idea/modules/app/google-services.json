@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "295713929823",
+    "firebase_url": "https://termplanner-441b9.firebaseio.com",
+    "project_id": "termplanner-441b9",
+    "storage_bucket": "termplanner-441b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295713929823:android:993c30e86ad582f10c39ea",
+        "android_client_info": {
+          "package_name": "com.example.termplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295713929823-9vqusntmoitfsdme5v9qlg3q2i62vafp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.termplanner",
+            "certificate_hash": "91f88b069bc7be546d4a5f0550c4a0555775fc17"
+          }
+        },
+        {
+          "client_id": "295713929823-0k8e546i41o9rlehg3moo35djjbqk11u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUM-RswNwTSOLlnXw-JzHsuxRKcZrQSqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295713929823-0k8e546i41o9rlehg3moo35djjbqk11u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

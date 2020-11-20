@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TermPlanner</string>
+    <string name="channel_name">notificationChannel</string>
+    <string name="channel_description">WGU: TP Notifications</string>
+    <string-array name="assessmentState">
+        <item>Not Taken</item>
+        <item>Passed</item>
+        <item>Failed</item>
+    </string-array>
+    <string-array name="courseActive">
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>drop</item>
+        <item>Plan to take</item>
+    </string-array>
+    <string-array name="assessmentType">
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+</resources>

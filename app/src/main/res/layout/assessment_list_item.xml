@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/assessment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assessment title"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessment_title"
+        android:id="@+id/assessment_due"
+        android:text="due date"
+        android:textAlignment="center"/>
+
+
+
+</RelativeLayout>

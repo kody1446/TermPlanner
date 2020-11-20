@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:title="add test note data"
+    android:id="@+id/add_note_data"
+    app:showAsAction="never"/>
+    <item
+        android:title="Add Note"
+        android:id="@+id/add_note"
+        app:showAsAction="never"/>
+    <item
+        android:title="Edit Course"
+        android:id="@+id/edit_course"
+        app:showAsAction="never"/>
+    <item
+        android:title="Delete course"
+        android:id="@+id/delete_course"
+        app:showAsAction="never"/>
+    <item android:id="@+id/course_list"
+        android:title="Course List"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/start_alarm"
+        android:title="Set alarm for start date"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/end_alarm"
+        android:title="Set alarm for end date"
+        app:showAsAction="never"/>
+</menu>

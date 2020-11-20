@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:textAlignment="center"
+            android:text="Goal: " />
+
+        <TextView
+            android:id="@+id/assessment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/due_date"
+            android:text="Assessment Title"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/assessment_type"
+            android:layout_width="138dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessment_title"
+            android:entries="@array/assessmentType" />
+
+        <Spinner
+            android:id="@+id/assessment_state"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessment_type"
+            android:entries="@array/assessmentState" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessment_state"
+            android:id="@+id/desc_header"
+            android:text="Assessment Description:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_below="@id/desc_header"
+            android:id="@+id/assessment_description"/>
+
+        <ListView
+
+            android:id="@+id/assessmentNoteLV"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/assessment_description"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="6dp"
+            android:accessibilityPaneTitle="Notes"
+            android:scrollbars="vertical"
+            android:tooltipText="Notes" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

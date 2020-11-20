@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseNameTxt"
+        android:hint="name"/>
+
+    <EditText
+        android:id="@+id/courseMentorTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:hint="Mentor name" />
+
+    <EditText
+        android:id="@+id/courseMentorEmailTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="153dp"
+        android:hint="Mentor Email" />
+
+    <EditText
+        android:id="@+id/courseMentorPhoneTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="102dp"
+        android:hint="Mentor Phone"
+        android:maxLength="12"/>
+
+    <EditText
+        android:id="@+id/startTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:inputType="date"
+        android:layout_marginTop="206dp"
+        android:hint="Start date yyyy-mm-dd"
+        android:maxLength="10"/>
+
+    <EditText
+        android:id="@+id/endTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:inputType="date"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="261dp"
+        android:hint="End date yyyy-mm-dd"
+        android:maxLength="10"/>
+
+
+</RelativeLayout>
+</ScrollView>

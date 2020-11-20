@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermDetailActivity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <Button
+        android:id="@+id/courseBtn"
+        android:layout_width="118dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/button_background"
+        android:text="Courses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termNameTxt" />
+
+    <TextView
+        android:id="@+id/endTxt"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="EndDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTxt" />
+
+    <TextView
+        android:id="@+id/termNameTxt"
+        android:layout_width="234dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="80dp"
+        android:text="TermName"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Start date:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termNameTxt" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="64dp"
+        android:text="End Date:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termNameTxt" />
+
+    <TextView
+        android:id="@+id/startTxt"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Start Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termNameTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

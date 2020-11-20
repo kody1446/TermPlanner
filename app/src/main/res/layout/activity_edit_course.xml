@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTermActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="115dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/courseActiveSpinner"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="Save" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:hint="name" />
+
+    <EditText
+        android:id="@+id/editTextStart"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:selectAllOnFocus="true"
+        android:inputType="date"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:layout_below="@+id/editTextName"
+        android:hint="start" />
+
+    <EditText
+        android:id="@+id/editTextEnd"
+        android:selectAllOnFocus="true"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextStart"
+        android:hint="end" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:layout_below="@+id/editTextEnd"
+        android:hint="Description"
+        android:textAlignment="center" />
+
+    <EditText
+    android:id="@+id/editTextMentor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+    android:layout_below="@+id/editTextDescription"
+    android:hint="Mentor"
+    android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextMentorPhone"
+        android:layout_width="match_parent"
+        android:selectAllOnFocus="true"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMentor"
+        android:hint="Mentor Phone"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextMentorEmail"
+        android:layout_width="match_parent"
+        android:selectAllOnFocus="true"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMentorPhone"
+        android:hint="Mentor Email"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="115dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/courseActiveSpinner"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/saveBtn"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="Cancel" />
+
+    <Spinner
+        android:id="@+id/courseActiveSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMentorEmail"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="221dp"
+        android:entries="@array/courseActive"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>
+</ScrollView>

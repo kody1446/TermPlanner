@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.termplanner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_baseline_school_24"
+        android:label="WGU Term Planner"
+        android:roundIcon="@drawable/ic_baseline_school_24"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".ProgressTracker"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".EditAssessmentActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AssessmentDetailActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AssessmentListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".EditCourseActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".CourseDetailActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".CourseListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".EditTermActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".TermDetailActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".TermList"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".DBProvider"
+            android:authorities="com.example.termplanner.DBProvider"
+            android:exported="false" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.helloandroid.alarms" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
